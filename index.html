@@ -11,59 +11,75 @@
   </head>
   <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">COVID-19</a>
-        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavId">
-            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="country.html">Conunty</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="Survey.html">Survery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">My Profile</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownId">
-                        <a class="dropdown-item" href="#">Action 1</a>
-                        <a class="dropdown-item" href="#">Action 2</a>
-                    </div>
-                </li>
-            </ul>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="text" placeholder="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            </form>
+      <a class="navbar-brand" href="#">COVID-19</a>
+      <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavId">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>               
+              <li class="nav-item">
+                  <a class="nav-link" href="survey.html">Survery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+            </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Covid19-World</a>
+                  <div class="dropdown-menu" aria-labelledby="dropdownId">
+                      <a class="dropdown-item" href="covid19-th.html">Thailand</a>
+                      <a class="dropdown-item" href="country-select.html">Country</a>
+                      <a class="dropdown-item" href="Map.html">Map</a>
+                  </div>
+              </li>
+          </ul>
+      </div>
+  </nav>
+    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-interval="10000">
+            <img src="img/covid19-1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <B>
+                <font color="red">
+                  <h5> COVID-19</h5>
+                  <br>
+                  <a href="country-select.html"><input type="button" value="CLICK" style="width:120px;height:80px"></a>
+                </font>
+              </B>
+            </div>
+          </div>
+          <div class="carousel-item" data-interval="2000">
+            <img src="img/covid19-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <B>
+                <font color="red">
+                  <h5>อาการและวิธีการป้องกัน รับมือ "ไวรัส COVID-19"</h5>
+                </font>
+              </B>
+              <B>
+                <font color="black">
+                  <h4>กินร้อน ช้อนกลาง ล้างมือ</h4>
+                  <a href="index-protect.html"><input type="button" value="CLICK" style="width:120px;height:80px"></a>
+                </font>
+              </B>
+            </div>
+          </div>
         </div>
-    </nav>  
-    <div class="container">
-        <div class="jumbotron">
-            <h1 class="display-3">COVID-19 Report</h1>
-            <p class="lead">Timeseries data on COVID-19 cases</p>
-            <hr class="my-2">
-            <p>More info</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-            </p>
-        </div>
-        <table class="table table-hover">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Country</th>
-              </tr>
-            </thead>
-            <tbody id="data">
-            </tbody>
-          </table>
+        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+        </ul>
+          
+          
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
